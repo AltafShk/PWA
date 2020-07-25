@@ -11,7 +11,6 @@
 }
 
 .footerr {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -34,4 +33,14 @@
 
 .jumbotron {
   background-image: url("https://gematsu.com/wp-content/uploads/2019/12/DBZK-OP-Movie_12-18-19.jpg");
+}
+
+
+.home-cards {
+  width: 100px;
+  height: 100px;
+}
+
+.countup {
+  font-size: 30px;
 }
