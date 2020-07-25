@@ -35,7 +35,10 @@ export default function Footer () {
                 </Col>
                 <Col xs={{size: 12}} md={{size: 4}}>
                     <h4 className="text-center text-white">LOCATION</h4>
-                    <h4 className="text-center text-white">GOOGLEE MAPPP</h4>
+                    <div className = 'map'>
+                        <a href = "https://goo.gl/maps/3uQ8HB9oeCLVE4UK6" target = "_blank"/>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.129661847416!2d67.00812581416734!3d24.85942075142342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e1a99361f07%3A0xf6d115e1324df3d9!2sPWA%20Blood%20Bank!5e0!3m2!1sen!2s!4v1595683121131!5m2!1sen!2s" width="100%" height="250"></iframe>
+                    </div>
                     
                 </Col>
             </Row>

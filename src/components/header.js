@@ -143,13 +143,15 @@ function Header(){
                               ABOUT US
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>Option 1</DropdownItem>
+                              <DropdownItem>HISTORY</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>MISSION</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>BOARD OF GOVERNORS</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>AFFILIATION AND CERTIFICATES</DropdownItem>
+                              <DropdownItem divider />
+                              <DropdownItem>SHARIAH COMPLIANCE</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter2} onMouseLeave={onMouseLeave2} isOpen={dropdownOpen2} toggle={toggle2} >
