@@ -1,12 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import Header from './components/header'
-
+import Header from './components/header';
+import './App.css';
+import Footer from './components/footer';
+import Home from './components/home'
 
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Header/>
+      <Home/>
+      {/* <Footer/> */}
     </div>
   );
 }
