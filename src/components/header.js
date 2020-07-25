@@ -15,6 +15,8 @@ import {
   DropdownMenu,
   DropdownItem,
   Container,
+  Row,
+  Col
 } from 'reactstrap';
 
 function Header(){
@@ -96,17 +98,20 @@ function Header(){
     return (
           <div>
             <Navbar color="light" light expand="md">
-              <Container >
-
+              <Container fluid={true}  >
+                <Row>
+                  <Col xs={{size: 12}} md={{size: 6}}>
                 <NavbarBrand href="/" className="col-auto">
-                <img src = {require("../images/logo.png")} style={{  maxWidth: 'auto', height: '100px'}}/></NavbarBrand>
+                <img src = {require("../images/logo.png")} style={{  width: '100%', height: '100px'}}/></NavbarBrand>
+                </Col>
+                <Col md={{size:3}}>
+                </Col>
+                <Col xs={{size: 12}} md={{size: 3}}>
                 
-                
-                
-                <Nav className="ml-auto col-md-auto" navbar >
+                <Nav className="mx-auto" navbar >
                   <div className="container donate-card">
 
-                    <NavLink className="col-12 donate-now">
+                    <NavLink className="col-12 donate-now ">
                       <Button className="donate-button">DONATE NOW</Button>
                     </NavLink>
 
@@ -126,7 +131,11 @@ function Header(){
                     <SocialIcon className="social" network="youtube" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
                     </NavItem>
                   </div>
-                </Nav>    
+                </Nav>
+                </Col>                
+                
+                </Row>
+                    
               </Container>
                   
               </Navbar>
