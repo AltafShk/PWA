@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+
 .donate-button {
   background-color: #E50000;
   border-color: #E50000;
@@ -60,4 +62,50 @@
   font-size: 30px;
 }
 
-@media
+.ci-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the image responsive */
+.ci-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.ci-container .carousel-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.ci-container .carousel-btn p {
+  background-color: RGBA(255,255,255,0.8);
+  font-family: 'Raleway','Arial';
+  color: #0b0b0b;
+  font-size: 225%;
+  letter-spacing: 10px;
+  padding: 10px 30px;
+  width: max-content;
+  height: auto;
+}
+
+.ci-container .carousel-btn button {
+  background-color: RGBA(0,0,0,0.8);
+  font-family: 'Raleway','Arial';
+  font-size: 137.5%;
+  border-radius: 0%;
+  border-style: none;
+  line-height: 1;
+  letter-spacing: 2px;
+  padding: 0.8em 1em 0.8em 1em;
+}

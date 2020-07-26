@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel'
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import { Container, Row, Col } from 'reactstrap';
 import Counter from "../components/counter"
-
+import CarouselItem from './carouselitem';
 
 
 function Home() {
@@ -18,18 +18,21 @@ function Home() {
     <React.Fragment>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          <img
+          {/* <img
             className="d-block w-100"
             src={require('../images/la.jpg')}
             alt="First slide"
-          />
-          <Carousel.Caption>
+          /> */}
+          <CarouselItem slide="1" image={require('../images/la.jpg')} />
+          {/* <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
-          <img
+        <CarouselItem slide="2" image={require('../images/la.jpg')} />
+          
+          {/* <img
             className="d-block w-100"
             src={require('../images/ny.jpg')}
             alt="Second slide"
@@ -38,10 +41,11 @@ function Home() {
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
-          <img
+          <CarouselItem slide="3" image={require('../images/la.jpg')} />
+          {/* <img
             className="d-block w-100"
             src={require('../images/chicago.jpg')}
             alt="Third slide"
@@ -52,7 +56,7 @@ function Home() {
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
 
@@ -95,23 +99,39 @@ function Home() {
         </Jumbotron>
 
 
-        <div>
+        <div >
         <h1 className = 'text-center display-4 mt-5 mb-5'>OUR MISSION</h1>
+        <img className="ml-auto mr-auto" src={require('../images/divider.png')}/>
         </div>
 
         <Container fluid={true}>
         <Row className="missions-jumbotron">
-                <Col xs={{size: 12}} md={{size: 6}} className = "">
-                <div>
+                <Col xs={{size: 12}} md={{size: 6}} style={{backgroundColor: '#E50000'}}>
+                
+                </Col>
+                {/* <Col md={{size: 6}} style={{backgroundColor: '#E50000'}}>
+                </Col> */}
+                
+                <Col  md={{size: 6}} style={{padding: '0px'}}>
 
-                </div>
+                    <img src="https://i.ytimg.com/vi/hllbC4OOAxo/maxresdefault.jpg" style={{minWidth: '100%'}} height="150px" alt="mission-image-1"/>
+                </Col> 
+            </Row>
+        </Container>
+        <div>
+        <h1 className = 'text-center display-4 mt-5 mb-5' style={{color: '#000000'}}>OUR VISION</h1>
+        </div>
+        <Container fluid={true}>
+        <Row className="missions-jumbotron">
+                
+                <Col  md={{size: 6}} style={{padding: '0px'}}>
+
+                    <img src="https://i.ytimg.com/vi/hllbC4OOAxo/maxresdefault.jpg" style={{minWidth: '100%'}} height="150px" alt="mission-image-1"/>
+                </Col> 
+                <Col xs={{size: 12}} md={{size: 6}} style={{backgroundColor: '#E50000'}}>
+                
                 </Col>
                 
-                <Col xs={{size: 12}} md={{size: 6}} className = "">
-                <div>
-                    <img src="https://i.ytimg.com/vi/hllbC4OOAxo/maxresdefault.jpg" width ="100%" height = "200" alt="mission-image-1" className = "mr-0"/>
-                </div>
-                </Col>
             </Row>
         </Container>
 
