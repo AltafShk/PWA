@@ -18,45 +18,14 @@ function Home() {
     <React.Fragment>
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          {/* <img
-            className="d-block w-100"
-            src={require('../images/la.jpg')}
-            alt="First slide"
-          /> */}
           <CarouselItem slide="1" image={require('../images/la.jpg')} />
-          {/* <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
         <CarouselItem slide="2" image={require('../images/la.jpg')} />
-          
-          {/* <img
-            className="d-block w-100"
-            src={require('../images/ny.jpg')}
-            alt="Second slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <CarouselItem slide="3" image={require('../images/la.jpg')} />
-          {/* <img
-            className="d-block w-100"
-            src={require('../images/chicago.jpg')}
-            alt="Third slide"
-          />
-  
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption> */}
+          
         </Carousel.Item>
       </Carousel>
 
@@ -99,9 +68,9 @@ function Home() {
         </Jumbotron>
 
 
-        <div >
-        <h1 className = 'text-center display-4 mt-5 mb-5'>OUR MISSION</h1>
-        <img className="ml-auto mr-auto" src={require('../images/divider.png')}/>
+        <div style={{width: '100%', textAlign: 'center'}}>
+        <h1 className = 'display-4 mt-5 mb-2'>OUR MISSION</h1>
+        <img src={require('../images/divider.png')}/>
         </div>
 
         <Container fluid={true}>
@@ -109,8 +78,6 @@ function Home() {
                 <Col xs={{size: 12}} md={{size: 6}} style={{backgroundColor: '#E50000'}}>
                 
                 </Col>
-                {/* <Col md={{size: 6}} style={{backgroundColor: '#E50000'}}>
-                </Col> */}
                 
                 <Col  md={{size: 6}} style={{padding: '0px'}}>
 
@@ -118,21 +85,18 @@ function Home() {
                 </Col> 
             </Row>
         </Container>
-        <div>
-        <h1 className = 'text-center display-4 mt-5 mb-5' style={{color: '#000000'}}>OUR VISION</h1>
+        <div style={{width: '100%', textAlign: 'center'}}>
+        <h1 className = 'display-4 mt-5 mb-2' style={{color: '#000000'}}>OUR VISION</h1>
+        <img src={require('../images/divider.png')}/>
         </div>
         <Container fluid={true}>
         <Row className="missions-jumbotron">
-                
                 <Col  md={{size: 6}} style={{padding: '0px'}}>
-
                     <img src="https://i.ytimg.com/vi/hllbC4OOAxo/maxresdefault.jpg" style={{minWidth: '100%'}} height="150px" alt="mission-image-1"/>
                 </Col> 
                 <Col xs={{size: 12}} md={{size: 6}} style={{backgroundColor: '#E50000'}}>
-                
                 </Col>
-                
-            </Row>
+          </Row>
         </Container>
 
       </React.Fragment>
