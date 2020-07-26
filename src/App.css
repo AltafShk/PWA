@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.donate-button {
+  background-color: #E50000;
+  border-color: #E50000;
+  border-radius: 20px;
+  margin: auto;
+  width: 170px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 767px){
+  .donate-button {
+    background-color: '#E500000';
+    border-color: #E50000;
+    border-radius: 20px;
+    width: 150%;
+    margin: 0px;
+    color: white;
+  }
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.donate-card {
+  width: 220px;
+}
+
+.footerr {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.upper-footer {
+  background-color: #E50000;  
+}
+
+.lower-footer {
+  background-color: #333333;
+  color: #929292;
+  font-size: small;
+  text-align: center;
+}
+
+.social-btn {
+  margin: auto;
+}
+
+/* --------------------- */
+
+.jumbotron {
+  background-image: url("https://gematsu.com/wp-content/uploads/2019/12/DBZK-OP-Movie_12-18-19.jpg");
+}
+
+
+.home-cards {
+  width: 100px;
+  height: 100px;
+}
+
+.countup {
+  font-size: 30px;
+}
+
+.ci-container {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make the image responsive */
+.ci-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.ci-container .carousel-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.ci-container .carousel-btn p {
+  background-color: RGBA(255,255,255,0.8);
+  font-family: 'Raleway','Arial';
+  color: #0b0b0b;
+  font-size: 225%;
+  letter-spacing: 10px;
+  padding: 10px 30px;
+  width: max-content;
+  height: auto;
+}
+
+.ci-container .carousel-btn button {
+  background-color: RGBA(0,0,0,0.8);
+  font-family: 'Raleway','Arial';
+  font-size: 137.5%;
+  border-radius: 0%;
+  border-style: none;
+  line-height: 1;
+  letter-spacing: 2px;
+  padding: 0.8em 1em 0.8em 1em;
+}
+
+
+/* ################ */
+
+.num-font {
+  font-size: 65px;
+  font-weight: 700;
+  color: #E50000;
+  margin-bottom: 0px;
+}
+
+
+.desc-font {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: -16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.home-img {
+  width: 100%;
+  height: 315px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-text {
+  background-color: rgba(122,122,122,0.1);
+  margin-top: 20px;
+  text-align: left;
+  padding: 15px;
+  height: 150px;
+  font-family: 'Quicksand', sans-serif;
+  
+}
+
+.white-home-text {
+  color: white;
+  padding: 5px;
+  padding-top: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.home-btn {
+  float: right;
+  margin-top: 20px;
+  background-color: #b9534f;
+  border-color: #b9534f;
+}
+
+.our-hist-txt {
+  color: white;
+  font-size: 60px;
+  font-weight: 500;
+  height: 240px;
+  padding: 50px;
+  text-align: left;
+  max-width: 100px;
+  line-height: 1;
+}
+
+.hist-author {
+  color: #e50000;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.hist-quote {
+  color: #7a7a7a;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
