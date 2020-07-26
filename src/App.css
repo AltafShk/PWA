@@ -168,11 +168,11 @@
 .our-hist-txt {
   color: white;
   font-size: 60px;
-  font-weight: 500;
-  height: 240px;
-  padding: 50px;
+  font-weight: 600;
+  /* height: 240px; */
+  padding: 30px;
   text-align: left;
-  max-width: 100px;
+  width: 350px;
   line-height: 1;
 }
 
@@ -189,4 +189,11 @@
     font-family: "Quicksand", Sans-serif;
     font-weight: 400;
     font-size: 20px;
+}
+
+.hist-main {
+  color: #7a7a7a;
+  font-family: 'Quicksand', sans-serif;
+  text-align: justify;
+  font-size: 13px;
 }
