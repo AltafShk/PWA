@@ -231,12 +231,39 @@ margin-top: 15px;
   
   color: white;
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
 }
 .mission-text {
   color: #ffffff;
   font-family: "Quicksand", Sans-serif;
-  font-weight: 100;
-  line-height: 1.5em;
+  font-size: 19px;
+  font-weight: lighter;
+  line-height: 1.9;
+}
+.virtue-header {
+  color: #000000;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+.aim-txt {
+  color: #7a7a7a;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.aim-back {
+  background-color: rgba(247, 247, 247);
+}
+.virtue-text {
+  color: #54595f;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.2em;
+  letter-spacing: -0.5px;
+}
+.mission-backgrnd {
+ background-image: url("https://ae01.alicdn.com/kf/HTB1cQNOXs_vK1Rjy0Foq6xIxVXag.jpg_q50.jpg");
 }

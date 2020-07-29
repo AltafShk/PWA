@@ -35,7 +35,7 @@ function Home() {
         </div>
 
         <Jumbotron fluid className="jumbotron">
-            <Container className = "">
+            <Container>
             <Row className="figures-jumbotron">
                 <Col xs={{size: 12}} md={{size: 4}} className = "mb-4">
                 <div className="card mx-auto my-auto" style={{"width":"100%", "height":"100%"}}>
