@@ -178,13 +178,13 @@ function Header(){
                               PUBLICATIONS
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>Option 1</DropdownItem>
+                              <DropdownItem>FINANCIAL REPORTS</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>DEPARTMENTAL REPORTS</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>QASID</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>SOUVENIR</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter4} onMouseLeave={onMouseLeave4} isOpen={dropdownOpen4} toggle={toggle4} >
@@ -192,13 +192,13 @@ function Header(){
                               NEWS AND STORIES
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>Option 1</DropdownItem>
+                              <DropdownItem>SUCCESS STORIES</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>BLOGS</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>EVENTS</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>VIDEOS</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter5} onMouseLeave={onMouseLeave5} isOpen={dropdownOpen5} toggle={toggle5} >

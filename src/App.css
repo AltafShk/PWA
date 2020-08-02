@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
 
 
 .donate-button {
@@ -266,4 +266,48 @@ margin-top: 15px;
 }
 .mission-backgrnd {
  background-image: url("https://ae01.alicdn.com/kf/HTB1cQNOXs_vK1Rjy0Foq6xIxVXag.jpg_q50.jpg");
+}
+.test {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.test-child-one {
+  background-color: #E50000;
+  display: table-row;
+  padding: 0px;
+}
+.test-child-two {
+  
+  display: table-row;
+  background-color:black;
+}
+.publications-header {
+  color: #ffffff;
+  padding: 30px 50px;
+  margin: 20px;
+  font-family: "Lato", Sans-serif;
+  font-weight: 600;
+  font-size: 3.5em;
+  line-height: 1;
+}
+.coming-soon {
+  font-family: Quicksand, sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 600;
+  color: rgb(229, 0, 0);
+  margin-top: 10px;
+}
+.miss-top {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.miss-body-right {
+  display: table-row;
+  background-color: #E50000;
+}
+.miss-body-left {
+  display: table-row;
 }

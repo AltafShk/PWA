@@ -8,8 +8,8 @@ import faStyles from 'font-awesome/css/font-awesome.css'
 export default function Mission (props) {
     return (
         <Container fluid={true} style = {{textAlign: "justify"}}>
-            <Row>
-                <Col md='6' xs='12' style = {{backgroundColor: "#e50000", height: 'fit-content'}}>
+            <Row class='miss-top'>
+                <Col md='6' xs='12' className='miss-body-right'>
                     <Container className='pt-4'>
                         <Row>
                             <Col xs='12'md='6'>
@@ -41,8 +41,7 @@ export default function Mission (props) {
                         
                     </Container>
                 </Col>
-                <Col className='mission-backgrnd' md='6' xs='12' style={{height: 'auto'}}>
-                    {/* <img src={require('../../images/ultra.jpg')} width='100%'/> */}
+                <Col className='mission-backgrnd miss-body-left' md='6' xs='12' style={{height: 'auto'}}>
                 </Col>
             </Row>
             <Row style={{textAlign: 'center'}}>
