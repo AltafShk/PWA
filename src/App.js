@@ -13,12 +13,14 @@ import SuccesStories from './components/NewsAndStories/successStories';
 import BoardOfGovernors from './components/About Us/boardofgovernors'
 import AffiliationsAndCertifications from './components/About Us/affiliationscertifications'
 import ShariahCompliance from './components/About Us/shariahcompliance'
+import BloodTransfusionServices from './components/Services/bloodtransfusionservices'
+import ThalassemiaDaycareCenter from './components/Services/thalassemiadaycarecenter'
 
 function App() {
   return (
     <div>
       <Header/>
-      <ShariahCompliance/>
+      <ThalassemiaDaycareCenter/>
       <Footer/>
     </div>
   );

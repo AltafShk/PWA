@@ -412,3 +412,33 @@ margin-top: 15px;
   font-weight: 400;
   margin-bottom: 0px;
 }
+
+
+.bts-txt{
+  color: white;
+    font-size: 50px;
+    font-weight: 600;
+    /* height: 240px; */
+    padding: 30px;
+    text-align: left;
+    width: 400px;
+    line-height: 1;
+}
+
+.bts-img-1{
+  width: 675px;
+  max-width: 100%;
+}
+
+.bts-small-txt{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:15px;
+  outline-color:rgb(53, 53, 53);
+  margin-top: 15px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+
+
