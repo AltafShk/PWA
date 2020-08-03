@@ -20,13 +20,15 @@ import MakeAnImpact from './components/GetInvolved/makeanimpact'
 import CorporatePartner from './components/GetInvolved/corporatepartner';
 import BloodDonation from './components/GetInvolved/blooddonation'
 import DonateNow from './components/GetInvolved/donatenow';
+import Videos from './components/NewsAndStories/videos';
+import ContactUs from './components/contactus';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <DonateNow/>
+      <ContactUs/>
       <Footer/>
     </div>
   );

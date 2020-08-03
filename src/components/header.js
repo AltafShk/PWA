@@ -206,15 +206,15 @@ function Header(){
                               GET INVOLVED
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>Option 1</DropdownItem>
+                              <DropdownItem>WHY US</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>DONATE NOW</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>BLOOD DONATION</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>CORPORATE PARTNER</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>MAKE AN IMPACT</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
                           <NavLink>
