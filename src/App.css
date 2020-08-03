@@ -624,3 +624,38 @@ margin-top: 15px;
   }
     
 }
+
+.dn-txt{
+  color: white;
+  font-size: 65px;
+  font-weight: 600;
+  /* height: 240px; */
+  padding: 30px;
+  text-align: left;
+  width: 468px;
+  line-height: 1;
+}
+
+
+.dn-small-txt{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:15px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 400;
+  margin-bottom: 0px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.dn-small-txt-2{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:15px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 800;
+  margin-bottom: 0px;
+  line-height: 30px;
+  text-align: left;
+  text-decoration: underline;
+}

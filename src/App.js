@@ -19,13 +19,14 @@ import WhyUs from './components/GetInvolved/whyus'
 import MakeAnImpact from './components/GetInvolved/makeanimpact'
 import CorporatePartner from './components/GetInvolved/corporatepartner';
 import BloodDonation from './components/GetInvolved/blooddonation'
+import DonateNow from './components/GetInvolved/donatenow';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <BloodDonation/>
+      <DonateNow/>
       <Footer/>
     </div>
   );
