@@ -18,13 +18,14 @@ import ThalassemiaDaycareCenter from './components/Services/thalassemiadaycarece
 import WhyUs from './components/GetInvolved/whyus'
 import MakeAnImpact from './components/GetInvolved/makeanimpact'
 import CorporatePartner from './components/GetInvolved/corporatepartner';
+import BloodDonation from './components/GetInvolved/blooddonation'
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <CorporatePartner/>
+      <BloodDonation/>
       <Footer/>
     </div>
   );
