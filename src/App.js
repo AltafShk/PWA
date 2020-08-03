@@ -15,12 +15,16 @@ import AffiliationsAndCertifications from './components/About Us/affiliationscer
 import ShariahCompliance from './components/About Us/shariahcompliance'
 import BloodTransfusionServices from './components/Services/bloodtransfusionservices'
 import ThalassemiaDaycareCenter from './components/Services/thalassemiadaycarecenter'
+import WhyUs from './components/GetInvolved/whyus'
+import MakeAnImpact from './components/GetInvolved/makeanimpact'
+import CorporatePartner from './components/GetInvolved/corporatepartner';
+
 
 function App() {
   return (
     <div>
       <Header/>
-      <ThalassemiaDaycareCenter/>
+      <CorporatePartner/>
       <Footer/>
     </div>
   );

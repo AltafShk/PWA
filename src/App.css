@@ -442,3 +442,122 @@ margin-top: 15px;
 }
 
 
+
+.wu-txt{
+  color: white;
+    font-size: 70px;
+    font-weight: 600;
+    /* height: 240px; */
+    padding: 30px;
+    text-align: left;
+    width: 400px;
+    line-height: 1;
+}
+
+
+.wu-small-txt{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:15px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+
+.wu-medium-txt{
+  color: black ;
+  font-family:'Quicksand', sans-serif;
+  font-size:20px;
+  outline-color:rgb(53, 53, 53);
+  margin-top: 15px;
+  font-weight: 1000;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+
+.mai-small-txt{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:16px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 600;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+
+.mai-med-txt{
+  color: black ;
+  font-family:'Quicksand', sans-serif;
+  font-size:35px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 500;
+  margin-top: 30px;
+  line-height: 30px; 
+}
+
+.mai-med-txt-2{
+  color: rgb(53, 53, 53) ;
+  font-family: sans-serif;
+  font-size:20px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 600;
+  margin-top: 30px;
+  line-height: 30px; 
+}
+
+
+.mai-quote {
+  color: #7a7a7a;
+    font-family: "Quicksand", Sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.mai-small-txt-2{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:16px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 75px;
+  line-height: 30px;
+  text-align: center;
+}
+
+
+.cp-txt{
+  color: white;
+    font-size: 70px;
+    font-weight: 600;
+    /* height: 240px; */
+    padding: 30px;
+    text-align: left;
+    width: 468px;
+    line-height: 1;
+}
+
+
+.cp-small-txt{
+  color: #7a7a7a ;
+  font-family:'Quicksand', sans-serif;
+  font-size:16px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: left;
+}
+
+
+.cp-med-txt{
+  color: black ;
+  font-family:'Quicksand', sans-serif;
+  font-size:22px;
+  outline-color:rgb(53, 53, 53);
+  font-weight: 600;
+  margin-top: 30px;
+  line-height: 30px; 
+}
