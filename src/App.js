@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <CorporatePartner/>
+      <SuccesStories/>
       <Footer/>
     </div>
   );
