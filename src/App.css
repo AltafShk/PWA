@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand');
 @import url('https://fonts.googleapis.com/css2?family=Lato');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans');
 
 .donate-button {
   background-color: #E50000;
@@ -269,11 +269,8 @@ margin-top: 15px;
 }
 .test {
   display: table;
-  height: 100%;
-  width: 100%;
 }
 .test-child-one {
-  background-color: #E50000;
   display: table-row;
   padding: 0px;
 }
@@ -715,5 +712,56 @@ margin-top: 15px;
   color: rgb(255, 0, 0);
   font-size: 20px;
   font-style: italic;
+  font-weight: 300;
+}
+.blog-read {
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: rgb(84, 89, 95);
+  font-size: 42px;
+  font-weight: 600;
+  font-family: "Quicksand", Sans-serif;
+}
+.blog-header {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Quicksand", Sans-serif;
+
+}
+.blog-text {
+  color: rgb(122, 122, 122);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Quicksand", Sans-serif;
+}
+.blog-post {
+  text-align: center;
+  position: relative;
+}
+.blog-desc {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5px;
+  width: 80%;
+  height: auto;
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  bottom: -25px;
+  left: 50px;
+}
+.blog-page-header {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-top: 20px;
+}
+.imp-donor-text {
+  color: #54595f;
+  font-family: "Quicksand", Sans-serif;
+  font-size: 16px;
   font-weight: 300;
 }

@@ -22,13 +22,15 @@ import BloodDonation from './components/GetInvolved/blooddonation'
 import DonateNow from './components/GetInvolved/donatenow';
 import Videos from './components/NewsAndStories/videos';
 import ContactUs from './components/contactus';
+import Blogs from './components/NewsAndStories/blogs';
+import ImpDonor from './components/blogs-pages/important-donor';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <ContactUs/>
+        <ImpDonor/>
       <Footer/>
     </div>
   );
