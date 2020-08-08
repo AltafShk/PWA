@@ -20,13 +20,17 @@ import MakeAnImpact from './components/GetInvolved/makeanimpact'
 import CorporatePartner from './components/GetInvolved/corporatepartner';
 import BloodDonation from './components/GetInvolved/blooddonation'
 import DonateNow from './components/GetInvolved/donatenow';
+import Videos from './components/NewsAndStories/videos';
+import ContactUs from './components/contactus';
+import Blogs from './components/NewsAndStories/blogs';
+import ImpDonor from './components/blogs-pages/important-donor';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <DonateNow/>
+        <ImpDonor/>
       <Footer/>
     </div>
   );

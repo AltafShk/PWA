@@ -96,9 +96,10 @@ function Header(){
     
     
     return (
-          <div>
+      // <Container fluid style={{padding: '0px'}}>
+          <div style={{width:'100%'}}>
             <Navbar color="light" light expand="md">
-              <Container fluid={true}  >
+              <Container fluid={true} style={{padding: '0px'}}>
                 <Row>
                   <Col xs={{size: 12}} md={{size: 6}}>
                 <NavbarBrand href="/" className="col-auto">
@@ -139,11 +140,15 @@ function Header(){
               </Container>
                   
               </Navbar>
-              <Navbar color="light" light expand="md">
-                <Container>
+
+
+              <Navbar color="light" light expand='lg'>
+                <Container style={{padding: '0px'}}>
+                  <Row>
                 <NavbarToggler onClick={toggle} />
+
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar>
+                    <Nav className="ml-auto" navbar>
                           <NavLink >
                             HOME
                           </NavLink>
@@ -206,15 +211,15 @@ function Header(){
                               GET INVOLVED
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>Option 1</DropdownItem>
+                              <DropdownItem>WHY US</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>DONATE NOW</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>BLOOD DONATION</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>CORPORATE PARTNER</DropdownItem>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <DropdownItem>MAKE AN IMPACT</DropdownItem>
                             </DropdownMenu>
                           </Dropdown>
                           <NavLink>
@@ -223,6 +228,7 @@ function Header(){
                         
                     </Nav>
                   </Collapse>
+                  </Row>
                 </Container>
               </Navbar>
                 </div>
