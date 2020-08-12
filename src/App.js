@@ -24,13 +24,14 @@ import Videos from './components/NewsAndStories/videos';
 import ContactUs from './components/contactus';
 import Blogs from './components/NewsAndStories/blogs';
 import ImpDonor from './components/blogs-pages/important-donor';
+import ThalessemiaQuiz from './components/blogs-pages/thalessemia-quiz';
 
 
 function App() {
   return (
     <div>
       <Header/>
-        <ImpDonor/>
+      <ThalessemiaQuiz/>
       <Footer/>
     </div>
   );
