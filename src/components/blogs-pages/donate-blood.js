@@ -4,63 +4,57 @@ import BlogHeader from './blogHeader';
 import FontAwesome from 'react-fontawesome';
 import faStyles from 'font-awesome/css/font-awesome.css'
 
-export default function ImpDonor () {
+export default function DonateBlood () {
     return (
         <React.Fragment>
         <Container fluid>
             <Row >
                 <Col>
-                    <BlogHeader header='Why is it important to be a donor?'
-                    imgName='blog-page-one-img.png' />
+                    <BlogHeader header='Who can donate blood?'
+                    imgName='blog-page-two-img.png' />
                 </Col>
             </Row>
         </Container>
         <Container>
         <Row className='mt-3'>
-                <Col xs={{size: 12}} md={{size: 4}} className = "mb-4">
+                <Col xs={{size: 12}} md={{size: 3}} className = "mb-4">
                 <div className="card mx-auto my-auto" style={{height: '230px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
                 {/* <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/impdonor-one.png')} alt="Card image"/> */}
-                <FontAwesome className = 'card-img-top home-cards mx-auto mt-2 fa-heart'
-                                    name = 'heart'
-                                    size = '5x' style = {{color:"#e50000"}}/>
+                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/blog-2-small-img-1.png')} alt="Card image"/>
+
                 <div className="card-body text-center">
-                    <p className="card-text imp-donor-text">1. It saves lives. What else you need?</p>
+                    <p className="card-text imp-donor-text">1. Weight at least 110 pounds
+( ~ 50 kg) or above</p>
                 </div>
                 </div>
                 </Col>
-                <Col xs={{size: 12}} md={{size: 4}} className = "mb-4">
+                <Col xs={{size: 12}} md={{size: 3}} className = "mb-4">
                 <div className="card mx-auto my-auto" style={{height: '230px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
                 
-                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/impdonor-two.png')} alt="Card image"/>
+                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/blog-2-small-img-2.png')} alt="Card image"/>
                 <div className="card-body text-center">
-                    <p className="card-text imp-donor-text">2. It is painful to lose a loved one which you could save by donating blood</p>
+                    <p className="card-text imp-donor-text">2. Age must be 18 years
+or above</p>
                 </div>
                 </div>
                 </Col>
-                <Col xs={{size: 12}} md={{size: 4}} className = "mb-4">
+                <Col xs={{size: 12}} md={{size: 3}} className = "mb-4">
                 <div className="card mx-auto my-auto" style={{height: '230px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
-                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/impdonor-three.png')} alt="Card image"/>
+                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/blog-2-small-img-3.png')} alt="Card image"/>
                 <div className="card-body text-center">
-                    <p className="card-text imp-donor-text">3. Because if you need blood one day, you would not hesitate to take it</p>
+                    <p className="card-text imp-donor-text">3. Blood pressure should be normal</p>
                 </div>
                 </div>
                 </Col>
-                <Col xs={{size: 12}} md={{size: 4}} className = "mb-4">
+                <Col xs={{size: 12}} md={{size: 3}} className = "mb-4">
                 <div className="card mx-auto my-auto" style={{height: '230px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
-                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/impdonor-four.png')} alt="Card image"/>
+                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/blog-2-small-img-4.png')} alt="Card image"/>
                 <div className="card-body text-center">
-                    <p className="card-text imp-donor-text">4. It gives you inner satisfaction</p>
+                    <p className="card-text imp-donor-text">4. Diabetic patients with control sugar level</p>
                 </div>
                 </div>
                 </Col>
-                <Col xs={{size: 12}} md={{size: 4}} className = "mb-4">
-                <div className="card mx-auto my-auto" style={{height: '230px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'}}>
-                <img className="card-img-top home-cards mx-auto mt-2" src={require('../../images/impdonor-five.png')} alt="Card image"/>
-                <div className="card-body text-center">
-                    <p className="card-text imp-donor-text">5. It gives donor a medical check at no cost.</p>
-                </div>
-                </div>
-                </Col>
+                
             </Row>
 
             <Container>
@@ -76,7 +70,7 @@ export default function ImpDonor () {
 
                     <Row>
                         <Col xs = "12" md = "4">
-                            <p className = "other-blog mb-0">Who can donate blood?</p>
+                            <p className = "other-blog mb-0">Why is it important to be a donor?</p>
                             <p className = "dates mt-0">July 7, 2019</p>
                         </Col>
 

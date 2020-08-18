@@ -24,13 +24,15 @@ import Videos from './components/NewsAndStories/videos';
 import ContactUs from './components/contactus';
 import Blogs from './components/NewsAndStories/blogs';
 import ImpDonor from './components/blogs-pages/important-donor';
+import DonateBlood from './components/blogs-pages/donate-blood';
+import Thalassemia from './components/blogs-pages/thalassemia';
 
 
 function App() {
   return (
     <div>
       <Header/>
-        <ImpDonor/>
+        <Thalassemia/>
       <Footer/>
     </div>
   );
