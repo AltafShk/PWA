@@ -34,7 +34,7 @@ function App() {
   return (
     <div>
       <Header/>
-      <Converter/>
+      <ZakaatCalculator/>
       <Footer/>
     </div>
   );
