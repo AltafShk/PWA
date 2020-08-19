@@ -28,13 +28,14 @@ import ThalessemiaQuiz from './components/blogs-pages/thalessemia-quiz';
 import Events from './components/NewsAndStories/events';
 import ZakaatCalculator from './components/Services/calculateZakaat';
 import Converter from './components/Services/currencyConverter';
+import SignUp from './components/signup';
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <ZakaatCalculator/>
+        <SignUp/>
       <Footer/>
     </div>
   );

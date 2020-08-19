@@ -18,6 +18,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
+// import { NavLink } from 'react-router-dom';
 
 function Header(){
 
@@ -224,7 +225,10 @@ function Header(){
                           </Dropdown>
                           <NavLink>
                             CONTACT US
-                          </NavLink> 
+                          </NavLink>
+                          <NavLink>
+                            SIGN UP
+                          </NavLink>
                         
                     </Nav>
                   </Collapse>

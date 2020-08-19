@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Container, Row, Col } from "reactstrap";
 
 
 export default function Converter () {
@@ -40,7 +41,7 @@ export default function Converter () {
                     console.log(response);
                     const conv = `${fromCurrency}_${toCurrency}`;
                     const ans = response.data[conv] * amount;
-                    setResult(ans);
+                    setResult(ans.toFixed(3));
                 })
                 .catch(error => {
                 console.log("Opps", error);
@@ -50,7 +51,19 @@ export default function Converter () {
             }
         };
     return(
-        <div className="Converter">
+        <Container fluid className="Converter">
+          <Container fluid>
+          <Row>
+                <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
+                    <p className = "bts-txt">CURRENCY CONVERTER</p>
+                </Col> 
+
+                <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>
+                <img className = "img-responsive bts-img-1" src={require('../../images/cc-img-1.jpg')}/>
+                </Col> 
+
+            </Row>
+          </Container>
           <h2>
             <span>Currency</span>Converter
           </h2>
@@ -82,6 +95,6 @@ export default function Converter () {
             <button onClick={convertHandler}>Convert</button>
             {result && <h3>{result}</h3>}
           </div>
-        </div>
+        </Container>
     )
 }
