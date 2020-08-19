@@ -2,11 +2,16 @@ import React from 'react';
 import { Container, Form, Label, FormGroup, Input, Row, Col, Button } from 'reactstrap';
 
 export default function SignUp () {
+    const handleSubmit = (v) => {
+        v.preventDefault();
+        console.log(v);
+        alert(v.target);
+    }
     return (
         <Container>
             <Row>
                 <Col xs='12' md='6'>
-                    <Form>
+                    <Form onSubmit={(values) => handleSubmit(values)}>
                         <FormGroup>
                             <Label for='name'>
                                 Name
@@ -72,7 +77,7 @@ export default function SignUp () {
                             Subscribe to the newsletter
                             </Label>
                         </FormGroup>
-                        <Button type='submit' className='mr-auto'>Sign Up</Button>
+                        <Button onClick={(e) => e.preventDefault()} type='submit' className='mr-auto'>Sign Up</Button>
                     </Form>
                 </Col>
             </Row>
