@@ -26,13 +26,15 @@ import Blogs from './components/NewsAndStories/blogs';
 import ImpDonor from './components/blogs-pages/important-donor';
 import ThalessemiaQuiz from './components/blogs-pages/thalessemia-quiz';
 import Events from './components/NewsAndStories/events';
+import CurrencyConverter from './components/Services/currencyconverter'
+import ZakatCalculator from './components/Services/zakatcalculator'
 
 
 function App() {
   return (
     <div>
       <Header/>
-      <Events/>
+      <ZakatCalculator/>
       <Footer/>
     </div>
   );
