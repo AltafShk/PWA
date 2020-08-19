@@ -27,13 +27,6 @@ class Signup extends Component {
     submitHandler = event => {
         const {name, password, confpassword, email, address, city, country, phone, subs, dob, profession, gender} = this.state
         event.preventDefault();
-        // console.log(name);
-        // console.log(email);
-        // console.log(dob)
-        // console.log(password);
-        // console.log(phone)
-        // console.log(subs)
-        // console.log(gender)
 
         var database = firebase.database();
 
@@ -72,7 +65,7 @@ class Signup extends Component {
 
     render(){
 
-        const {name, password, confpassword, email, address, city, country, phone, subs, dob, profession, gender} = this.state
+        const {name, password, confpassword, email, address, city, country, phone, subs, dob, profession, gender} = this.state;
 
     return (
 
@@ -88,7 +81,7 @@ class Signup extends Component {
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>
-                <img className = "img-responsive bts-img-1" src={require('../images/su-img-1.png')}/>
+                <img className = "img-responsive bts-img-1" src={require('../images/su-img-1.png')} alt="aaa"/>
                 </Col> 
         
             </Row>
