@@ -29,13 +29,14 @@ import Events from './components/NewsAndStories/events';
 import ZakaatCalculator from './components/Services/calculateZakaat';
 import Converter from './components/Services/currencyConverter';
 import SignUp from './components/signup';
+import SignIn from './components/signin'
 
 
 function App() {
   return (
     <div>
       <Header/>
-        <SignUp/>
+        
       <Footer/>
     </div>
   );
