@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Container, Form, Label, FormGroup, Input, Row, Col, Button } from 'reactstrap';
 import firebase from 'firebase';
 import FireSignIn from './firebase-signin'
+import { Link, Redirect } from 'react-router-dom';
 
 
 
@@ -23,7 +24,14 @@ class SignIn extends Component {
         var database = firebase.database();
 
 
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        firebase.auth().signInWithEmailAndPassword(email, password)
+        
+        .then(function(res){
+            window.location.assign("/")
+            
+        })
+        
+        .catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
@@ -33,7 +41,7 @@ class SignIn extends Component {
           });
 
 
-
+          
           //TODO: Route to home
           
         
@@ -42,6 +50,12 @@ class SignIn extends Component {
 
 
     render(){
+
+        if (this.state.signedIn == true){
+            return(
+                <Redirect to = "/"></Redirect>
+            )
+        }
 
 
         const {password, email} = this.state
@@ -106,7 +120,18 @@ class SignIn extends Component {
                     </Col>
                 </Row>
 
+
+                <Row className = "mt-5">
+                <p>Don't have an account yet?</p>
+                </Row>
+
+                <Row>
+                <Link to = "sign-up"><Button>Click here to Sign Up</Button></Link>
+                </Row>    
+
         </Container>
+
+        
         
 
         

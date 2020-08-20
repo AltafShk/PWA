@@ -19,6 +19,8 @@ import {
   Col
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import firebase from 'firebase';
+
 // import { NavLink } from 'react-router-dom';
 
 function Header(){
@@ -95,6 +97,32 @@ function Header(){
     const onMouseLeave5 = () => {
       setDD5(false);
     }
+
+
+    const signOuthandler = () => {
+      firebase.auth().signOut().then(function() {
+        console.log("signed-out")
+        window.location.assign("/")
+      }).catch(function(error) {
+        alert(error.message)
+      });
+    }
+
+
+    var user = firebase.auth().currentUser;
+    var database = firebase.database();
+
+    var name = null;
+
+    if (user !== null){
+    var userName = firebase.database().ref('users/' + user.uid + '/username');
+    userName.on('value', function(snapshot) {
+      name = snapshot.val();
+    });}
+
+
+    
+
     
     
     return (
@@ -123,15 +151,15 @@ function Header(){
                     </NavItem>
 
                     <NavItem className="social-btn">
-                    <SocialIcon className="social" network="twitter" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon className="social" url = "https://twitter.com/pwachk?lang=en" network="twitter" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
                     </NavItem>
 
                     <NavItem className="social-btn">
-                    <SocialIcon className="social" network="instagram" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon className="social" url = "https://www.instagram.com/pwachk/?hl=en" network="instagram" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
                     </NavItem>
 
                     <NavItem className="social-btn">
-                    <SocialIcon className="social" network="youtube" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon className="social" url = "https://www.youtube.com/channel/UCOAl9_ptaFEuejuQbEUNuRA" network="youtube" bgColor="#e50000" style={{ height: 35, width: 35 }}/>
                     </NavItem>
                   </div>
                 </Nav>
@@ -233,11 +261,19 @@ function Header(){
                           CONTACT US
                           </NavLink>
                           </Link>
-                          <Link to = "/sign-up" style={{ textDecoration: 'none' }}>                          
+                          {user !== null ?                           
                           <NavLink>
-                            SIGN UP
+                            <Button onClick = {signOuthandler}>SIGN OUT</Button>
                           </NavLink>
-                          </Link>
+                          : <Link to = "/sign-in" style={{ textDecoration: 'none' }}>                          
+                          <NavLink>
+                            SIGN IN
+                          </NavLink>
+                          </Link>}
+
+
+                          {user !== null ? <p>{name}</p> : ""}
+                          
                     </Nav>
                   </Collapse>
                   </Row>
