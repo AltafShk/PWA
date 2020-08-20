@@ -41,7 +41,7 @@ function App() {
       <BrowserRouter>
         <Header/>
           <Switch>
-            <Route path='/' component={Home} />
+            <Route exact path='/' component={Home} />
             <Route path='/contact-us' component={ContactUs} />
             <Route path='/history' component={History} />
             <Route path='/mission' component={Mission} />
@@ -70,7 +70,7 @@ function App() {
             <Route path='/currency-converter' component={Converter} />
             <Route path='/thalassemia-daycare-center' component={ThalassemiaDaycareCenter} />
             <Route path='/sign-in' component={SignIn} />
-            <Route path='/signUp' component={SignUp} />
+            <Route path='/sign-up' component={SignUp} />
           </Switch>
         <Footer/>
       </BrowserRouter>

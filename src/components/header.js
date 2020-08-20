@@ -18,6 +18,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 // import { NavLink } from 'react-router-dom';
 
 function Header(){
@@ -114,7 +115,7 @@ function Header(){
                   <div className="container donate-card">
 
                     <NavLink className="col-12 donate-now ">
-                      <Button className="donate-button">DONATE NOW</Button>
+                    <Link to = "/donate-now" style={{ textDecoration: 'none' }}><Button className="donate-button">DONATE NOW</Button></Link>
                     </NavLink>
 
                     <NavItem className="social-btn">
@@ -150,23 +151,23 @@ function Header(){
 
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                          <NavLink >
+                          <Link to = "/" style={{ textDecoration: 'none' }}><NavLink>
                             HOME
-                          </NavLink>
+                          </NavLink></Link>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter1} onMouseLeave={onMouseLeave1} isOpen={dropdownOpen1} toggle={toggle1} >
                             <DropdownToggle nav caret>
                               ABOUT US
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>HISTORY</DropdownItem>
+                            <Link to = "/history" style={{ textDecoration: 'none' }}><DropdownItem>HISTORY</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>MISSION</DropdownItem>
+                              <Link to = "/mission" style={{ textDecoration: 'none' }}><DropdownItem>MISSION</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>BOARD OF GOVERNORS</DropdownItem>
+                              <Link to = "/board-of-governors" style={{ textDecoration: 'none' }}><DropdownItem>BOARD OF GOVERNORS</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>AFFILIATION AND CERTIFICATES</DropdownItem>
+                              <Link to = "/affiliations-and-certifications" style={{ textDecoration: 'none' }}><DropdownItem>AFFILIATION AND CERTIFICATES</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>SHARIAH COMPLIANCE</DropdownItem>
+                              <Link to = "/shariah-compliance" style={{ textDecoration: 'none' }}><DropdownItem>SHARIAH COMPLIANCE</DropdownItem></Link>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter2} onMouseLeave={onMouseLeave2} isOpen={dropdownOpen2} toggle={toggle2} >
@@ -174,9 +175,13 @@ function Header(){
                               SERVICES
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>Option 1</DropdownItem>
+                            <Link to = "/blood-transfusion-services" style={{ textDecoration: 'none' }}><DropdownItem>BLOOD TRANSFUSION SERVICES</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>Option 2</DropdownItem>
+                              <Link to = "/thalassemia-daycare-center" style={{ textDecoration: 'none' }}><DropdownItem>THALASSEMIA DAYCARE CENTER</DropdownItem></Link>
+                              <DropdownItem divider />
+                              <Link to = "/zakaat-calculator" style={{ textDecoration: 'none' }}><DropdownItem>ZAKAAT CALCULATOR</DropdownItem></Link>
+                              <DropdownItem divider />
+                              <Link to = "/currency-converter" style={{ textDecoration: 'none' }}><DropdownItem>CURRENCY CONVERTER</DropdownItem></Link>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter3} onMouseLeave={onMouseLeave3} isOpen={dropdownOpen3} toggle={toggle3} >
@@ -184,13 +189,13 @@ function Header(){
                               PUBLICATIONS
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>FINANCIAL REPORTS</DropdownItem>
+                            <Link to = "/financial-report" style={{ textDecoration: 'none' }}><DropdownItem>FINANCIAL REPORTS</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>DEPARTMENTAL REPORTS</DropdownItem>
+                              <Link to = "/departmental-report" style={{ textDecoration: 'none' }}><DropdownItem>DEPARTMENTAL REPORTS</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>QASID</DropdownItem>
+                              <Link to = "/qasid" style={{ textDecoration: 'none' }}><DropdownItem>QASID</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>SOUVENIR</DropdownItem>
+                              <Link to = "/souvenir" style={{ textDecoration: 'none' }}><DropdownItem>SOUVENIR</DropdownItem></Link>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter4} onMouseLeave={onMouseLeave4} isOpen={dropdownOpen4} toggle={toggle4} >
@@ -198,13 +203,13 @@ function Header(){
                               NEWS AND STORIES
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>SUCCESS STORIES</DropdownItem>
+                            <Link to = "/success-stories" style={{ textDecoration: 'none' }}><DropdownItem>SUCCESS STORIES</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>BLOGS</DropdownItem>
+                              <Link to = "/blogs" style={{ textDecoration: 'none' }}><DropdownItem>BLOGS</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>EVENTS</DropdownItem>
+                              <Link to = "/events" style={{ textDecoration: 'none' }}> <DropdownItem>EVENTS</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>VIDEOS</DropdownItem>
+                              <Link to = "/videos" style={{ textDecoration: 'none' }}> <DropdownItem>VIDEOS</DropdownItem></Link>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter5} onMouseLeave={onMouseLeave5} isOpen={dropdownOpen5} toggle={toggle5} >
@@ -212,24 +217,27 @@ function Header(){
                               GET INVOLVED
                             </DropdownToggle>
                             <DropdownMenu right>
-                              <DropdownItem>WHY US</DropdownItem>
+                            <Link to = "/why-us" style={{ textDecoration: 'none' }}><DropdownItem>WHY US</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>DONATE NOW</DropdownItem>
+                              <Link to = "/donate-now" style={{ textDecoration: 'none' }}><DropdownItem>DONATE NOW</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>BLOOD DONATION</DropdownItem>
+                              <Link to = "/blood-donation" style={{ textDecoration: 'none' }}><DropdownItem>BLOOD DONATION</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>CORPORATE PARTNER</DropdownItem>
+                              <Link to = "/corporate-partner" style={{ textDecoration: 'none' }}> <DropdownItem>CORPORATE PARTNER</DropdownItem></Link>
                               <DropdownItem divider />
-                              <DropdownItem>MAKE AN IMPACT</DropdownItem>
+                              <Link to = "/make-an-impact" style={{ textDecoration: 'none' }}> <DropdownItem>MAKE AN IMPACT</DropdownItem></Link>
                             </DropdownMenu>
                           </Dropdown>
+                          <Link to = "/contact-us" style={{ textDecoration: 'none' }}>
                           <NavLink>
-                            CONTACT US
+                          CONTACT US
                           </NavLink>
+                          </Link>
+                          <Link to = "/sign-up" style={{ textDecoration: 'none' }}>                          
                           <NavLink>
                             SIGN UP
                           </NavLink>
-                        
+                          </Link>
                     </Nav>
                   </Collapse>
                   </Row>

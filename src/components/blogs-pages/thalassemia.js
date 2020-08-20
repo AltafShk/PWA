@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import BlogHeader from './blogHeader';
 import FontAwesome from 'react-fontawesome';
 import faStyles from 'font-awesome/css/font-awesome.css'
+import { Link } from 'react-router-dom';
+
 
 export default function Thalassemia () {
     return (
@@ -98,17 +100,23 @@ Avoid infections. Protect yourself from infections with frequent hand-washing an
 
                     <Row>
                         <Col xs = "12" md = "4">
+                        <Link to = "/important-donor" style={{ textDecoration: 'none' }}>
                             <p className = "other-blog mb-0">Why is it important to be a donor?</p>
+                            </Link>
                             <p className = "dates mt-0">July 7, 2019</p>
                         </Col>
 
                         <Col xs = "12" md = "4">
+                        <Link to = "/thalassemia-quiz" style={{ textDecoration: 'none' }}>
                             <p className = "other-blog mb-0">Thalassemia quiz</p>
+                            </Link>
                             <p className = "dates mt-0">July 7, 2019</p>
                         </Col>
 
                         <Col xs = "12" md = "4">
+                        <Link to = "/donate-blood" style={{ textDecoration: 'none' }}>
                             <p className = "other-blog mb-0">Who can donate blood?</p>
+                            </Link>
                             <p className = "dates mt-0">July 7, 2019</p>
                         </Col>
                     </Row>

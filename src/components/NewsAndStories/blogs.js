@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
 
 export default function Blogs () {
     return(
@@ -38,9 +40,9 @@ export default function Blogs () {
                             <img className='hist-img img-responsive' style={{padding: '5px'}} src={require('../../images/blog_one.jpg')} />
                         </div>
                         <div className='blog-desc'>
-                            <a href='#'>
+                            <Link to = "/important-donor" style={{ textDecoration: 'none' }}>
                                 <p className='blog-header'> 1. Why is it important to be a donor?</p>
-                            </a>
+                            </Link>
                             
                             <p className='blog-text'>See how you can save lives with blood donation.</p>
                         </div>
@@ -55,7 +57,9 @@ export default function Blogs () {
                 </Media>
                 <Media body>
                     <Media heading>
+                    <Link to = "/donate-blood" style={{ textDecoration: 'none' }}>
                     <p className='blog-header'>2. Who can donate blood?</p>
+                    </Link>
                     </Media>
                     <p className='blog-text'>Check your eligibility to donate blood.</p>
                 </Media>
@@ -67,7 +71,9 @@ export default function Blogs () {
                 </Media>
                 <Media body>
                     <Media heading>
+                    <Link to = "/thalassemia" style={{ textDecoration: 'none' }}>
                     <p className='blog-header'>3. What is Thalessemia?</p>
+                    </Link>
                     </Media>
                     <p className='blog-text'>Learn about thalessemia</p>
                 </Media>
@@ -79,7 +85,9 @@ export default function Blogs () {
                 </Media>
                 <Media body>
                     <Media heading>
+                    <Link to = "/thalassemia-quiz" style={{ textDecoration: 'none' }}>
                     <p className='blog-header'>4. Thalessemia quiz</p>
+                    </Link>
                     </Media>
                     <p className='blog-text'>Test your knowledge about thalassemia.</p>
                 </Media>
