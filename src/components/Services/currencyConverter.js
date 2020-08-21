@@ -51,8 +51,9 @@ export default function Converter () {
             }
         };
     return(
-        <Container fluid className="Converter">
-          <Container fluid>
+      <React.Fragment>
+        <Container fluid >
+          
           <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
                     <p className = "bts-txt">CURRENCY CONVERTER</p>
@@ -64,6 +65,7 @@ export default function Converter () {
 
             </Row>
           </Container>
+          <Container className = "Converter mt-5">
           <h2>
             <span>Currency</span>Converter
           </h2>
@@ -96,5 +98,6 @@ export default function Converter () {
             {result && <h3>{result}</h3>}
           </div>
         </Container>
+        </React.Fragment>
     )
 }

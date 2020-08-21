@@ -33,6 +33,7 @@ import Converter from './components/Services/currencyConverter';
 import SignUp from './components/signup';
 import SignIn from './components/signin'
 import DonateBlood from './components/blogs-pages/donate-blood';
+import DonateMoney from './components/donatemoney'
 
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
             <Route path='/thalassemia-daycare-center' component={ThalassemiaDaycareCenter} />
             <Route path='/sign-in' component={SignIn} />
             <Route path='/sign-up' component={SignUp} />
+            <Route path = '/donate-money' component = {DonateMoney}/>
           </Switch>
         <Footer/>
       </BrowserRouter>

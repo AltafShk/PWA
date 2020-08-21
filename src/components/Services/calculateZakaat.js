@@ -18,7 +18,7 @@ export default function ZakaatCalculator() {
 
             </Row>
             <Container>
-            <h4 className='text-center'>Calculate your Zaakat</h4>
+            <h4 className='text-center mt-5 mb-3'>Calculate your Zaakat</h4>
             <Form>
                 <Label for='amt'>Enter your amount: </Label>
                 <Input className='w-50 text-center align-items-center' htmlFor='amt' onChange={(e) => {
