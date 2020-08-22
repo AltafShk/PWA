@@ -23,6 +23,8 @@ class DonateMoney extends Component{
         const {currency, transactionHint, store, terminal, amount, customer, userName, password} = this.state;
         event.preventDefault();
 
+
+        //Curently hardcoded to check request
         var data = {
             "Registration" : {
              "Currency": "AED",
