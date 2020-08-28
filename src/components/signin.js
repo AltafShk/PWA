@@ -27,6 +27,7 @@ class SignIn extends Component {
         firebase.auth().signInWithEmailAndPassword(email, password)
         
         .then(function(res){
+            
             window.location.assign("/")
             
         })

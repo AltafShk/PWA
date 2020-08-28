@@ -49,11 +49,26 @@ class DonateMoney extends Component{
             }
         }
 
-        axios.post('https://demo-ipg.ctdev.comtrust.ae:2443/' , data, headerObject)
+        // axios
+        fetch('https://demo-ipg.ctdev.comtrust.ae:2443/', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            body: JSON.stringify(data)
+          })
         .then((res) => {
             console.log(res)
         })
         .catch(err => console.log(err))
+            
+        // axios.post('https://demo-ipg.ctdev.comtrust.ae:2443/' , data, headerObject)
+        // .then((res) => {
+        //     console.log(res)
+        // })
+        // .catch(err => console.log(err))
           
         
     }

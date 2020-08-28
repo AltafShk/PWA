@@ -143,7 +143,7 @@ function Header(){
                   <div className="container donate-card">
 
                     <NavLink className="col-12 donate-now ">
-                    <Link to = "/donate-now" style={{ textDecoration: 'none' }}><Button className="donate-button">DONATE NOW</Button></Link>
+                    <Link to = "/donate-money" style={{ textDecoration: 'none' }}><Button className="donate-button">DONATE NOW</Button></Link>
                     </NavLink>
 
                     <NavItem className="social-btn">
