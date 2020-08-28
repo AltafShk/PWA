@@ -5,7 +5,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Carousel from 'react-bootstrap/Carousel'
 import FontAwesome from 'react-fontawesome';
 import faStyles from 'font-awesome/css/font-awesome.css'
-
+import Converter from '../Services/currencyConverter'
+import ZakatCalculator  from '../Services/calculateZakaat'
 
 export default function DonateNow (props) {
 
@@ -174,6 +175,25 @@ export default function DonateNow (props) {
 
                 <a href = "https://www.daraz.pk/shop/patients-welfare-association-karachi/?spm=a2a0e.12032417.6340504160.8.6e394843y023Oy&hybid=1"><p className = "mt-3 dn-small-txt" style = {{textAlign: "left"}}>https://www.daraz.pk/shop/patients-welfare-association-karachi/?spm=a2a0e.12032417.6340504160.8.6e394843y023Oy&hybid=1</p></a>
 
+
+                </Container>
+
+                <Container>
+                <div style={{width: '100%', textAlign: 'center'}}>
+                <h1 className = 'display-4 mt-5 mb-2'>CURRENCY CONVERTER</h1>
+                <img className="mx-auto" src={require('../../images/divider.png')}/>
+                </div>
+
+                <Converter></Converter>
+                </Container>
+
+                <Container>
+                <div style={{width: '100%', textAlign: 'center'}}>
+                <h1 className = 'display-4 mt-5 mb-2'>ZAKAT CALCULATOR</h1>
+                <img className="mx-auto" src={require('../../images/divider.png')}/>
+                </div> 
+
+                <ZakatCalculator></ZakatCalculator>
 
                 </Container>
 

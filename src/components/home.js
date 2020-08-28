@@ -2,20 +2,104 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel'
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Form, Label, FormGroup, Input, Row, Col, Button } from 'reactstrap';
 import Counter from "../components/counter"
 import CarouselItem from './carouselitem';
-import {Button} from 'reactstrap';
 import {Link} from 'react-router-dom'
+import emailjs from 'emailjs-com'
+// import Swal from 'sweetalert2'
+
 
 
 
 function Home() {
     const [index, setIndex] = useState(0);
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [topic, setTopic] = useState("Financial Donation");
+    const [other, setOther] = useState("");
+
+
   
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
+
+
+    const handleOther = e => {
+      if (e.target.value !== "Other"){
+        setOther("");
+        setTopic(e.target.value);
+
+      }
+      else{
+        setTopic(e.target.value);
+
+      }
+
+
+
+    };
+
+
+    const submitHandler = event => {
+      event.preventDefault();
+      emailjs.init("user_D7SSZRhPf7zF7TFs3Tb4t");
+
+      const templateId = 'template_U3FFukLX';
+
+
+      if (other !== ""){
+        sendFeedback(templateId, {
+          topic: other, 
+          name: name, 
+          email: email
+         }
+        )
+      }
+      else{
+        sendFeedback(templateId, {
+          topic: topic, 
+          name: name, 
+          email: email
+         }
+        )
+      }
+
+      
+      
+        
+      
+
+      
+      }   
+
+    const sendFeedback = (templateId, variables) => {
+      emailjs.send(
+        'outlook', templateId,
+        variables
+        ).then(res => {
+          // Email successfully sent alert
+          // Swal.fire({
+          //   title: 'Email Successfully Sent',
+          //   icon: 'success'
+          // })
+          console.log('Succesful')
+        })
+        // Email Failed to send Error alert
+        .catch(err => {
+          // Swal.fire({
+          //   title: 'Email Failed to Send',
+          //   icon: 'error'
+          // })
+          console.error('Email Error:', err)
+        })
+    }
+
+
+    
   
     return (
     <React.Fragment>
@@ -84,7 +168,7 @@ function Home() {
           <img className="mx-auto" src={require('../images/divider.png')}/>
           </div>
 
-          <Container style = {{height: '150px'}}>
+          <Container>
             <ol>
               <li className = "hm-li-txt mt-5">
                 Donate Online
@@ -108,17 +192,56 @@ function Home() {
           <img className="mx-auto" src={require('../images/divider.png')}/>
           </div>
 
-          <Container style = {{height: '150px'}}>
+          <Container>
 
-          <p className='hm-p-txt mt-5'>Tel: +92-21-99215740-45 ( Ext. 5040-41 )<br/><br/>
-          Direct Line: (092)21-32735214, (092)21-32751707<br/><br/>
-          Email: info@pwa-chk.org.pk</p>
+                    <Form>
+                        <FormGroup>
+                            <Label for='name'>
+                                Name
+                            </Label>
+                            <Input type='text' name='name' id='name' placeholder='Enter Your Name' value = {name} onChange = {e => setName(e.target.value)} />
+                        </FormGroup>
+                        
+                        <FormGroup>
+                            <Label for="exampleEmail">Email</Label>
+                            <Input type="email" name="email" id="exampleEmail" placeholder="Enter your Email" value = {email} onChange = {e => setEmail(e.target.value)}/>
+                        </FormGroup>
+
+                        <FormGroup>
+                            <Label for='number'>
+                                Phone No.
+                            </Label>
+                            <Input type='phone' name='number' id='number' placeholder='Enter your number' value = {phone} onChange = {e => setPhone(e.target.value)}/>
+                        </FormGroup>
+                        
+                       
+                        <FormGroup>
+                            <Label for="topic">Would like to discuss:</Label>
+                            <Input type="select" name="topic" id="topic" value = {topic} onChange = {(e) => handleOther(e)}>
+                                <option value = "Financial Donation">Financial Donation</option>
+                                <option value = "Blood Donation">Blood Donation</option>
+                                <option value = "Meeting">Meeting</option>
+                                <option value = "Visiting">Visiting</option>
+                                <option value = "Other">Other</option>
+                            </Input>
+                        </FormGroup>
+
+                            {topic == "Other" ? <FormGroup>
+                            <Label for='other-reason'>
+                                Write the other reason
+                            </Label>
+                            <Input type='text' name='other' id='other' placeholder='Write a short description' value = {other} onChange = {e => setOther(e.target.value)}/>
+                        </FormGroup> : ""}
+
+                    </Form>
+
+                    <p className = "hm-li-txt">*Get in touch with RGO</p>
 
 
           </Container>
 
           <div>
-          <Link onClick = {() => {window.location.assign('/contact-us')}} ><Button className = "home-btn mr-5">Learn More</Button></Link>
+          <Button onClick={(e) => submitHandler(e)} className='home-btn mr-5'>Submit</Button>                       
           </div>
 
 
