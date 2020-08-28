@@ -7,7 +7,7 @@ export default function ZakaatCalculator() {
 
     return(
         <Container fluid>
-            <Row>
+            {/* <Row>
                 <Col md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
                     <p className = "bts-txt">ZAKAT CALCULATOR</p>
                 </Col> 
@@ -16,17 +16,17 @@ export default function ZakaatCalculator() {
                 <img className = "img-responsive bts-img-1" src={require('../../images/zc-img-1.jpg')}/>
                 </Col> 
 
-            </Row>
+            </Row> */}
             <Container>
-            <h4 className='text-center mt-5 mb-3'>Calculate your Zaakat</h4>
+            <h4 className='text-center mt-5 mb-3'>Calculate your Zakat</h4>
             <Form>
                 <Label for='amt'>Enter your amount: </Label>
                 <Input className='w-50 text-center align-items-center' htmlFor='amt' onChange={(e) => {
                     changeAmount(e.target.value);
                 }}/>
                 <Button className='mt-3 mb-3' onClick={() => {
-                    if ( typeof(0.25 * amount) === typeof(1) ){
-                        return changeAmt(0.25 * amount);
+                    if ( typeof(0.025 * amount) === typeof(1) ){
+                        return changeAmt(0.025 * amount);
                     }
                 }} >
                     Convert

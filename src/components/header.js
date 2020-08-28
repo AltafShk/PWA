@@ -142,8 +142,8 @@ function Header(){
                 <Nav className="mx-auto" navbar >
                   <div className="container donate-card">
 
-                    <NavLink className="col-12 donate-now ">
-                    <Link to = "/donate-money" style={{ textDecoration: 'none' }}><Button className="donate-button">DONATE NOW</Button></Link>
+                    <NavLink className="col-12 donate-now">
+                    <Link to = "/donate-now" style={{ textDecoration: 'none' }}><Button className="donate-button">DONATE NOW</Button></Link>
                     </NavLink>
 
                     <NavItem className="social-btn">
@@ -206,10 +206,6 @@ function Header(){
                             <Link to = "/blood-transfusion-services" style={{ textDecoration: 'none' }}><DropdownItem>BLOOD TRANSFUSION SERVICES</DropdownItem></Link>
                               <DropdownItem divider />
                               <Link to = "/thalassemia-daycare-center" style={{ textDecoration: 'none' }}><DropdownItem>THALASSEMIA DAYCARE CENTER</DropdownItem></Link>
-                              <DropdownItem divider />
-                              <Link to = "/zakaat-calculator" style={{ textDecoration: 'none' }}><DropdownItem>ZAKAAT CALCULATOR</DropdownItem></Link>
-                              <DropdownItem divider />
-                              <Link to = "/currency-converter" style={{ textDecoration: 'none' }}><DropdownItem>CURRENCY CONVERTER</DropdownItem></Link>
                             </DropdownMenu>
                           </Dropdown>
                           <Dropdown nav inNavbar className="d-inline-block" onMouseOver={onMouseEnter3} onMouseLeave={onMouseLeave3} isOpen={dropdownOpen3} toggle={toggle3} >

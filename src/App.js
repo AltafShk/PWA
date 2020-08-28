@@ -67,8 +67,8 @@ function App() {
             <Route path='/qasid' component={Qasid} />
             <Route path='/souvenir' component={Souvenir} />
             <Route path='/blood-transfusion-services' component={BloodTransfusionServices} />
-            <Route path='/zakaat-calculator' component={ZakaatCalculator} />
-            <Route path='/currency-converter' component={Converter} />
+            {/* <Route path='/zakaat-calculator' component={ZakaatCalculator} /> */}
+            {/* <Route path='/currency-converter' component={Converter} /> */}
             <Route path='/thalassemia-daycare-center' component={ThalassemiaDaycareCenter} />
             <Route path='/sign-in' component={SignIn} />
             <Route path='/sign-up' component={SignUp} />

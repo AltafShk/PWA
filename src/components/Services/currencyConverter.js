@@ -52,7 +52,7 @@ export default function Converter () {
         };
     return(
       <React.Fragment>
-        <Container fluid >
+        {/* <Container fluid >
           
           <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
@@ -64,11 +64,11 @@ export default function Converter () {
                 </Col> 
 
             </Row>
-          </Container>
+          </Container> */}
           <Container className = "Converter mt-5">
-          <h2>
+          {/* <h2>
             <span>Currency</span>Converter
-          </h2>
+          </h2> */}
           <div className="From">
             <input
               name="amount"
