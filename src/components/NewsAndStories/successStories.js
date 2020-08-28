@@ -7,16 +7,16 @@ export default function SuccesStories () {
     return (
         <React.Fragment>
             <Container fluid >
-                <Row>
-                    <Col xs={{size: 12}} md={{size: 6}} style={{backgroundColor: '#e50000'}}>
-                        <h1 className='publications-header'>
-                            SUCCESS STORIES
-                        </h1>
-                    </Col>
-                    <Col xs={{size: 12}} md={{size: 6}} style={{backgroundColor: '#000000'}}>
-                        <p className='text-white'>yahaa img ayegi</p>
-                    </Col>
-                </Row>
+            <Row>
+                <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
+                    <p className = "bts-txt">SUCCESS STORIES</p>
+                </Col> 
+
+                <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>
+                <img className = "img-responsive bts-img-1" src={require('../../images/sc-img-1.png')}/>
+                </Col> 
+        
+            </Row>
             </Container>
             <Container style={{textAlign: 'center'}}>
                 <Row className='mt-5'>

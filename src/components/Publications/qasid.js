@@ -6,14 +6,14 @@ export default function Qasid () {
     return (
         <Container fluid className='test'>
             <Row>
-                <Col xs={{size: 12}} md={{size: 6}} className='test-child-one'>
-                    <h1 className='publications-header'>
-                        QASID
-                    </h1>
-                </Col>
-                <Col xs={{size: 12}} md={{size: 6}} className='test-child-two'>
-                <p className='text-white'>yahaa img ayegi</p>
-                </Col>
+                <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
+                    <p className = "bts-txt">QASID</p>
+                </Col> 
+
+                <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>
+                <img className = "img-responsive bts-img-1" src={require('../../images/slide2.jpg')}/>
+                </Col> 
+        
             </Row>
             <Row className='mt-4'>
                 <Col xs={{offset: 1}}>
