@@ -25,7 +25,7 @@ class DonateMoney extends Component{
 
 
         //Curently hardcoded to check request
-        var data = {
+        var payload = {
             "Registration" : {
              "Currency": "AED",
              "ReturnPath": "https://localhost:3000/home",
@@ -46,16 +46,37 @@ class DonateMoney extends Component{
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
+                
             }
         }
 
-        axios.post('https://demo-ipg.ctdev.comtrust.ae:2443/' , data, headerObject)
+        // axios.post('https://demo-ipg.ctdev.comtrust.ae:2443/' , payload, {
+        //     'Content-Type': 'application/json',
+        //     'Accept': 'application/json',
+        // })
+        // axios({
+        //     method: 'POST',
+        //     withCredentials: 'true',
+        //     url: 'https://demo-ipg.ctdev.comtrust.ae:2443/',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Accept': 'application/json',
+        //     },
+        //     data: JSON.stringify(payload)
+        //   })
+        fetch('https://demo-ipg.ctdev.comtrust.ae:2443/', {
+            credentials: 'include',
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+            body: JSON.stringify(payload)
+          })
         .then((res) => {
             console.log(res)
         })
         .catch(err => console.log(err))
-          
-        
     }
 
    
@@ -123,7 +144,7 @@ class DonateMoney extends Component{
                             <Input type='password' name='password' id='password' placeholder='Enter your password' value = {password} onChange = {e => this.setState({password: e.target.value})}/>
                         </FormGroup>
                         
-                        <Button onClick = {(e) => this.donateHandler(e)} type='submit' className='mr-auto'>Donate Money</Button>
+                        <Button onClick = {(e) => this.donateHandler(e)} type='submit' className='mr-auto'>Donate Moneyy</Button>
                     </Form>
                 </Col>
             </Container>

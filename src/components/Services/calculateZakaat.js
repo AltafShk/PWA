@@ -25,8 +25,8 @@ export default function ZakaatCalculator() {
                     changeAmount(e.target.value);
                 }}/>
                 <Button className='mt-3 mb-3' onClick={() => {
-                    if ( typeof(0.25 * amount) === typeof(1) ){
-                        return changeAmt(0.25 * amount);
+                    if ( typeof(0.025 * amount) === typeof(1) ){
+                        return changeAmt(0.025 * amount);
                     }
                 }} >
                     Convert

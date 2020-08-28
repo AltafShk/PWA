@@ -142,7 +142,7 @@ function Header(){
                 <Nav className="mx-auto" navbar >
                   <div className="container donate-card">
 
-                    <NavLink className="col-12 donate-now ">
+                    <NavLink className="col-12 donate-now">
                     <Link to = "/donate-now" style={{ textDecoration: 'none' }}><Button className="donate-button">DONATE NOW</Button></Link>
                     </NavLink>
 

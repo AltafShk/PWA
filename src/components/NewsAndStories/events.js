@@ -21,7 +21,27 @@ export default function Events () {
             {name: "Blood Donation Camp at 3rd Health Expo, 30-31st Dec 2017", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpwachk%2Fposts%2F1662794220443783&width=500"},
             {name: "Voluntary Blood Donation Camp at Police Training Centre, 4th August 2017", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpwachk%2Fposts%2F1519888001401073&width=500"}
         ],
-        2: [],
+        2: [{name: "13th health Asia expo 22nd-24th August", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpwachk%2Fposts%2F1537888739600999&show_text=true&width=552&height=735&appId"},
+        {name: "Health and OT exhibition 6th Jan 2018", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpwachk%2Fposts%2F1670899952966543&show_text=true&width=552&height=716&appId"},
+        {name: "Dawn lifestyle EXPO PWA blood grouping stall 3rd 4th 5th feb 2018", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1700719279984610%2F&show_text=true&width=552&height=735&appId"},
+        {name: "Health Asia exhibition @expo 11’13th September18", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1980795005310368%2F&show_text=true&width=552&height=773&appId"},
+        {name: "Session at ittehad ramazan @ geo 18 May", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1809527382437132%2F&show_text=true&width=552&height=593&appId"},
+        {name: "Session at ramzan humara emaah @ ajj news 19th May", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1810710008985536%2F&show_text=true&width=552&height=438&appId"},
+        {name: "FM 100 session 20 May", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1819915704731633%2F&show_text=true&width=552&height=206&appId"},
+        {name: "Mehmman ramazan @KTN 31st May", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1823641271025743%2F&show_text=true&width=552&height=574&appId"},
+        {name: "Barkat ramazan @ news01 5th June", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1828279360561934%2F&show_text=true&width=552&height=629&appId"},
+        {name: "Ishq ramzan @TV one 5th June", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1828282217228315%2F&show_text=true&width=552&height=629&appId"},
+        {name: "Jago Pakistan jaago @hum TV 11th June", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1834662436590293%2F&show_text=true&width=552&height=647&appId"},
+        {name: "Ramzan pakistan @ PTV 11th June", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1834692886587248%2F&show_text=true&width=552&height=460&appId"},
+        {name: "Ramazan kareem @ samma TV 13th June", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1837443202978883%2F&show_text=true&width=552&height=502&appId"},
+        {name: "Bilal Qutub at Qutub online visited TDC 13th June", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F1838149259574944%2F&show_text=true&width=552&height=589&appId"},
+        {name: "28thjan bake sale orientation meeting", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F2179479012108632%2F&show_text=true&width=552&height=629&appId"},
+        {name: "4th feb hyderi  fund raiser campaign", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F2179479012108632%2F&show_text=true&width=552&height=629&appId"},
+        {name: "9th feb zamzama fundraiser campaign", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F2186546254735241%2F&show_text=true&width=552&height=665&appId"},
+        {name: "10th feb khadda marker fundraiser campaign", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F2186546254735241%2F&show_text=true&width=552&height=665&appId"},
+        {name: "10th feb boat basin food Campaign ", url: "https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F179666072089946%2Fposts%2F2225505377505995%2F&show_text=true&width=552&height=849&appId"},
+
+        ],
         3: [],
         4: [],
         5: [],
@@ -67,25 +87,25 @@ export default function Events () {
                             <Event events={data[1]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                        <div>helloosss</div>
+                        <Event events={data[2]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                        <div>helloosss</div>
+                        <Event events={data[3]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="forth">
-                        <div>helloosss</div>
+                        <Event events={data[4]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="fifth">
-                        <div>helloosss</div>
+                        <Event events={data[5]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="sixth">
-                        <div>helloosss</div>
+                        <Event events={data[6]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="seventh">
-                        <div>helloosss</div>
+                        <Event events={data[7]} />
                         </Tab.Pane>
                         <Tab.Pane eventKey="eighth">
-                        <div>helloosss</div>
+                        <Event events={data[8]} />
                         </Tab.Pane>
                     </Tab.Content>
                     </Col>
