@@ -7,7 +7,7 @@ import Counter from "../components/counter"
 import CarouselItem from './carouselitem';
 import {Link} from 'react-router-dom'
 import emailjs from 'emailjs-com'
-// import Swal from 'sweetalert2'
+import Swal from 'sweetalert2'
 
 
 
@@ -46,16 +46,17 @@ function Home() {
 
     const submitHandler = event => {
       event.preventDefault();
-      emailjs.init("user_D7SSZRhPf7zF7TFs3Tb4t");
+      emailjs.init("user_Jn2UdZaOs6rgIcHKnxjUP");
 
-      const templateId = 'template_U3FFukLX';
+      const templateId = 'basic';
 
 
       if (other !== ""){
         sendFeedback(templateId, {
           topic: other, 
           name: name, 
-          email: email
+          email: email,
+          number: phone
          }
         )
       }
@@ -63,7 +64,8 @@ function Home() {
         sendFeedback(templateId, {
           topic: topic, 
           name: name, 
-          email: email
+          email: email,
+          number: phone
          }
         )
       }
@@ -78,22 +80,22 @@ function Home() {
 
     const sendFeedback = (templateId, variables) => {
       emailjs.send(
-        'outlook', templateId,
+        'gmail', templateId,
         variables
         ).then(res => {
           // Email successfully sent alert
-          // Swal.fire({
-          //   title: 'Email Successfully Sent',
-          //   icon: 'success'
-          // })
+          Swal.fire({
+            title: 'Email Successfully Sent',
+            icon: 'success'
+          })
           console.log('Succesful')
         })
         // Email Failed to send Error alert
         .catch(err => {
-          // Swal.fire({
-          //   title: 'Email Failed to Send',
-          //   icon: 'error'
-          // })
+          Swal.fire({
+            title: 'Email Failed to Send',
+            icon: 'error'
+          })
           console.error('Email Error:', err)
         })
     }
