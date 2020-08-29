@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Carousel from 'react-bootstrap/Carousel'
+
 
 
 
@@ -23,7 +22,7 @@ export default function CorporatePartner (props) {
         <Container fluid={true}>
             <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                    <p className = "cp-txt">BECOME A CORPORATE PARTNER</p>
+                    <p className = "cp-txt my-4">BECOME A CORPORATE PARTNER</p>
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>

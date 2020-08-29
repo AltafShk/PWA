@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Form, Label, FormGroup, Input, Row, Col, Button } from 'reactstrap';
-import FontAwesome from 'react-fontawesome';
-import axios from 'axios'
+
 
 
 class DonateMoney extends Component{

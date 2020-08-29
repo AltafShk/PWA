@@ -1,10 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Carousel from 'react-bootstrap/Carousel'
 import FontAwesome from 'react-fontawesome';
-import faStyles from 'font-awesome/css/font-awesome.css'
 import Converter from '../Services/currencyConverter'
 import ZakatCalculator  from '../Services/calculateZakaat'
 
@@ -16,7 +13,7 @@ export default function DonateNow (props) {
         <Container fluid={true}>
             <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                    <p className = "dn-txt">DONATE NOW</p>
+                    <p className = "dn-txt my-4">DONATE NOW</p>
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>

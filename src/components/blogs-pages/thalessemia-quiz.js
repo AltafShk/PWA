@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
-import BlogHeader from './blogHeader';
 import FontAwesome from 'react-fontawesome';
-import faStyles from 'font-awesome/css/font-awesome.css'
 import { Link } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
 

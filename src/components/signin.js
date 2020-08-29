@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Container, Form, Label, FormGroup, Input, Row, Col, Button } from 'reactstrap';
 import firebase from 'firebase';
-import FireSignIn from './firebase-signin'
 import { Link, Redirect } from 'react-router-dom';
 
 
