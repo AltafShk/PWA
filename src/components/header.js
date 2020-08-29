@@ -19,7 +19,7 @@ import {
   Col
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import firebase from 'firebase';
+// import firebase from 'firebase';
 
 // import { NavLink } from 'react-router-dom';
 
@@ -99,26 +99,26 @@ function Header(){
     }
 
 
-    const signOuthandler = () => {
-      firebase.auth().signOut().then(function() {
-        console.log("signed-out")
-        window.location.assign("/")
-      }).catch(function(error) {
-        alert(error.message)
-      });
-    }
+    // const signOuthandler = () => {
+    //   firebase.auth().signOut().then(function() {
+    //     console.log("signed-out")
+    //     window.location.assign("/")
+    //   }).catch(function(error) {
+    //     alert(error.message)
+    //   });
+    // }
 
 
-    var user = firebase.auth().currentUser;
-    var database = firebase.database();
+    // var user = firebase.auth().currentUser;
+    // var database = firebase.database();
 
-    var name = null;
+    // var name = null;
 
-    if (user !== null){
-    var userName = firebase.database().ref('users/' + user.uid + '/username');
-    userName.on('value', function(snapshot) {
-      name = snapshot.val();
-    });}
+    // if (user !== null){
+    // var userName = firebase.database().ref('users/' + user.uid + '/username');
+    // userName.on('value', function(snapshot) {
+    //   name = snapshot.val();
+    // });}
 
 
     
@@ -257,7 +257,10 @@ function Header(){
                           CONTACT US
                           </NavLink>
                           </Link>
-                          {user !== null ?                           
+
+
+                        {/* Below is sign in thing */}
+                          {/* {user !== null ?                           
                           <NavLink>
                             <Button onClick = {signOuthandler}>SIGN OUT</Button>
                           </NavLink>
@@ -268,7 +271,7 @@ function Header(){
                           </Link>}
 
 
-                          {user !== null ? <p>{name}</p> : ""}
+                          {user !== null ? <p>{name}</p> : ""} */}
                           
                     </Nav>
                   </Collapse>

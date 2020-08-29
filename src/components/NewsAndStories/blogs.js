@@ -9,7 +9,7 @@ export default function Blogs () {
         <Container fluid>
             <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                    <p className = "cp-txt">BLOGS</p>
+                    <p className = "cp-txt my-5">BLOGS</p>
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>

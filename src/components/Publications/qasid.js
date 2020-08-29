@@ -7,7 +7,7 @@ export default function Qasid () {
         <Container fluid className='test'>
             <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                    <p className = "bts-txt">QASID</p>
+                    <p className = "bts-txt my-5">QASID</p>
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>

@@ -151,7 +151,7 @@ function Home() {
                 <div className="card mx-auto my-auto" style={{"width":"100%", "height":"100%"}}>
                 <img className="card-img-top home-cards mx-auto mt-2" src={require('../images/board.png')} alt="Card image"/>
                 <div className="card-body text-center">
-                <Counter start = {0} end = {264} duration = {3} className = "counter"/>
+                <Counter start = {0} end = {247} duration = {3} className = "counter"/>
                     <p className="card-text text-center">Total registered patients in TDC</p>
                 </div>
                 </div>
@@ -219,7 +219,7 @@ function Home() {
                        
                         <FormGroup>
                             <Label for="topic">Would like to discuss:</Label>
-                            <Input type="select" name="topic" id="topic" value = {topic} onChange = {(e) => handleOther(e)}>
+                            <Input className = "home-select" type="select" name="topic" id="topic" value = {topic} onChange = {(e) => handleOther(e)}>
                                 <option value = "Financial Donation">Financial Donation</option>
                                 <option value = "Blood Donation">Blood Donation</option>
                                 <option value = "Meeting">Meeting</option>

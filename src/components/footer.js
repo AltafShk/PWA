@@ -26,10 +26,10 @@ export default function Footer () {
                 <Col xs={{size: 12}} md={{size: 4}}>
                     <h4 className="text-center text-white">SOCIAL MEDIA</h4>
                     <div className="footer-card text-center mt-4 mb-4">
-                        <SocialIcon className="social"  url="https://www.facebook.com/" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
-                        <SocialIcon className="social"  url="https://www.twitter.com/" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
-                        <SocialIcon className="social"  url="https://www.instagram.com/" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
-                        <SocialIcon className="social"  url="https://www.youtube.com/" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon className="social"  url="https://www.facebook.com/pwachk/" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon className="social"  url = "https://twitter.com/pwachk?lang=en" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon className="social"  url="https://www.instagram.com/pwachk/?hl=en" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
+                        <SocialIcon className="social"  url="https://www.youtube.com/channel/UCOAl9_ptaFEuejuQbEUNuRA" bgColor="#E50000" fgColor="#ffffff" style={{ height: 35, width: 35 }} />
                     </div>
                     
                 </Col>
@@ -47,9 +47,129 @@ export default function Footer () {
                 <p >Copyright © 2020 All rights reserved by Patients' Welfare Association (Regd.)</p>
                 </Col>
                 <Col xs={{size: 12}} md={{size: 6}}>
-                    <p>
-                        allll linksssssssss
-                    </p>
+                    <a href = "/history">
+                    History
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/mission">
+                       Mission
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/board-of-governors">
+                       Board Of Governors
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/affiliations-and-certifications">
+                       Affiliations and Certifications
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/shariah-compliance">
+                       Shariah Compliance
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/blood-transfusion-services">
+                       Blood Transfusion Services
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/thalassemia-daycare-services">
+                       Thalassemia Daycare Services
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/financial-report">
+                       Financial Reports
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/departmental-report">
+                       Departmental Reports
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/qasid">
+                       Qasid
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/souvenir">
+                       Souvenir
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/success-stories">
+                       Success Stories
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/blogs">
+                       Blogs
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/videos">
+                       Videos
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/events">
+                       Events
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/why-us">
+                       Why Us?
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/donate-now">
+                       Donate Now
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/corporate-partner">
+                       Corporate Partner
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/blood-donation">
+                       Blood Donation
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/make-an-impact">
+                       Make An Impact
+                    </a>
+                    &nbsp;
+                    | 
+                    &nbsp;
+                    <a href = "/contact-us">
+                       Contact Us
+                    </a>
                 </Col>
             </Row>
         </Container>

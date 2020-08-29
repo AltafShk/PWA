@@ -30,8 +30,8 @@ import Thalassemia from './components/blogs-pages/thalassemia';
 import Events from './components/NewsAndStories/events';
 import ZakaatCalculator from './components/Services/calculateZakaat';
 import Converter from './components/Services/currencyConverter';
-import SignUp from './components/signup';
-import SignIn from './components/signin'
+// import SignUp from './components/signup';
+// import SignIn from './components/signin'
 import DonateBlood from './components/blogs-pages/donate-blood';
 import DonateMoney from './components/donatemoney'
 
@@ -70,8 +70,8 @@ function App() {
             {/* <Route path='/zakaat-calculator' component={ZakaatCalculator} /> */}
             {/* <Route path='/currency-converter' component={Converter} /> */}
             <Route path='/thalassemia-daycare-center' component={ThalassemiaDaycareCenter} />
-            <Route path='/sign-in' component={SignIn} />
-            <Route path='/sign-up' component={SignUp} />
+            {/* <Route path='/sign-in' component={SignIn} />
+            <Route path='/sign-up' component={SignUp} /> */}
             <Route path = '/donate-money' component = {DonateMoney}/>
           </Switch>
         <Footer/>

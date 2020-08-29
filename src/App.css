@@ -1117,3 +1117,9 @@ select {
 .react-quiz-container .selection-tag.multiple {
   background: #FF9800;
 }
+
+
+.home-select{
+  margin: 0px;
+  padding: 0px;
+}

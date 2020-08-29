@@ -1,10 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Carousel from 'react-bootstrap/Carousel'
 import FontAwesome from 'react-fontawesome';
-import faStyles from 'font-awesome/css/font-awesome.css'
 
 
 export default function MakeAnImpact (props) {
@@ -15,7 +12,7 @@ export default function MakeAnImpact (props) {
         <Container fluid={true}>
             <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                    <p className = "wu-txt">MAKE AN IMPACT</p>
+                    <p className = "wu-txt my-4">MAKE AN IMPACT</p>
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>

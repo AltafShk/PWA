@@ -1,9 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Carousel from 'react-bootstrap/Carousel'
 import FontAwesome from 'react-fontawesome';
-import faStyles from 'font-awesome/css/font-awesome.css'
 
 export default function Mission (props) {
     return (

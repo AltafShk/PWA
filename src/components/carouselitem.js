@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Button } from 'reactstrap';
 
 export default function CarouselItem ({slide, image}) {
-    if (slide === "1"){
+    if (slide === "3"){
         return (
             <div className="ci-container container-fluid" style={{padding: '0px', textAlign: 'center'}}>
                 <img

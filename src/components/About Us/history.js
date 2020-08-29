@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Row, Col } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
-import faStyles from 'font-awesome/css/font-awesome.css'
+
 
 function History(){
 
@@ -23,7 +23,7 @@ function History(){
               <Container fluid={true} style = {{textAlign: "center"}}>
                     <Row>
                         <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                         <p className = "our-hist-txt">OUR <br/> HISTORY</p>
+                         <p className = "our-hist-txt my-5">OUR <br/> HISTORY</p>
                         </Col> 
 
                         <Col  md={{size: 6}} sm = {{size: 12}}>
@@ -53,7 +53,7 @@ function History(){
                     PWA’s Drugbank, provided for the basic medicinal needs of patients admitted in Dr. Ruth K.M. Pfau Civil Hospital for almost 4 decades, however it is no longer functional because Dr Ruth Pfau Civil Hospital Karachi now offers free medicines to patients.
                 </p>
                 <div style={{width: '100%', textAlign: 'center', color: '#000', marginBottom: '3px'}}>
-                    <h1 className = 'display-6 mt-5 mb-2'>BLOOD BANK</h1>
+                    <h1 className = 'display-6 mt-5 mb-2'>BLOOD TRANSFUSION SERVICES</h1>
                     <img src={require('../../images/divider.png')}/>
                 </div>
                 <p className="col-12 mb-3 hist-p-text">

@@ -7,7 +7,7 @@ export default function FinancialReport () {
         <Container fluid className='test'>
             <Row>
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{backgroundColor: "#e50000"}}>
-                    <p className = "bts-txt">FINANCIAL REPORTS</p>
+                    <p className = "bts-txt my-5">FINANCIAL REPORTS</p>
                 </Col> 
 
                 <Col  md={{size: 6}} sm = {{size: 12}} style = {{padding: "0px"}}>
