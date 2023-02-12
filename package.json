@@ -9,7 +9,7 @@
     "axios": "^0.21.1",
     "emailjs-com": "^2.6.3",
     "firebase": "^7.18.0",
-    "firebase-tools": "^8.7.0",
+    "firebase-tools": "^11.22.0",
     "firebaseui": "^4.6.1",
     "font-awesome": "^4.7.0",
     "isomorphic-fetch": "^2.2.1",
